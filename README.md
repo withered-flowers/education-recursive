@@ -3,6 +3,7 @@
 1. [Prelude to Recursive](#prelude-to-recursive)
 1. [Recursive How to](#recursive-how-to)
   - [Base Case (Limit)](#base-case-limit)
+1. [Why Recursive](#why-recursive)
 1. [References](#references)
 
 ## Recap Functions
@@ -287,7 +288,43 @@ output:
 21
 ```
 
+```javascript
+function fibonacciSequence(inputNumber) {
+  // base case
+  if(inputNumber < 2) {
+    return inputNumber;
+  }
 
-## Referensi
-* [Promise - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-* [Promise - State](https://media.prod.mdn.mozit.cloud/attachments/2018/04/18/15911/32e79f722e83940fdaea297acdb5df92/promises.png)
+  // recursive call
+  return fibonacciSequence(inputNumber - 1) + fibonacciSequence(inputNumber - 2);
+}
+
+console.log(fibonacciSequence(8));
+```
+
+Nah sudah makin tercerahkan tentang rekursif bukan?
+
+## Why Recursive
+Jadi pertanyaan akhirnya adalah, mengapa kita menggunakan rekursif yang (sepertinya) menyusahkan
+hidup kita ini?
+
+Mari kita coba lihat sebuah catatan pendek dari gambar ini yah
+
+![loop-vs-recursive](assets/itervsrec.png)
+
+Dari gambar ini terlihat bahwa dalam kasus tertentu, pendekatan secara rekursif akan memiliki
+jumlah langkah yang lebih sedikit daripada pendekatan secara looping, sehingga apabila diterjemahkan
+dalam coding, artinya jumlah codenya bisa jadi lebih sedikit, dan (bisa jadi) menjadi lebih efisien.
+
+Jadi pada akhirnya .....
+
+Happy *Recursion*
+
+![infinite-pooh](assets/poohrec.gif)
+
+## References
+* https://www.tutorialspoint.com/computer_programming/computer_programming_functions.htm
+* https://www.geeksforgeeks.org/recursion/
+* https://www.cs.utah.edu/~germain/PPS/Topics/recursion.html
+* https://medium.com/@williambdale/recursion-the-pros-and-cons-76d32d75973a
+* https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/
