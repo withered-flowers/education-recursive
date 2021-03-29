@@ -159,12 +159,12 @@ Mari kita coba melihat dari yang standard looping dengan rekursifnya yah
   <td>
 
   ```javascript
-  function printNumber(inputNumber) {
-    for(let i = inputNumber; i >= 1; i--) {
-      console.log(i);
-    }
-  }
-
+  function printNumber(inputNumber) {  
+    for(let i = inputNumber; i >= 1; i--) {  
+      console.log(i);  
+    }  
+  }  
+  
   printNumber(5);
   ```
 
@@ -177,19 +177,19 @@ Mari kita coba melihat dari yang standard looping dengan rekursifnya yah
   <td>
 
   ```javascript
-  function printNumberRecursive(number) {
-    // base case
-    if(number === 0) {
-      return;
-    }
-    // logic
-    console.log(number);
-
-    // recursive
-    printNumberRecursive(number-1);
-  }
-
-  printNumberRecursive(5);
+  function printNumberRecursive(number) {  
+    // base case  
+    if(number === 0) {  
+      return;  
+    }  
+    // logic  
+    console.log(number);  
+  
+    // recursive  
+    printNumberRecursive(number-1);  
+  }  
+  
+  printNumberRecursive(5);  
   ```
 
   </td>
