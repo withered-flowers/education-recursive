@@ -154,7 +154,6 @@ Mari kita coba melihat dari yang standard looping dengan rekursifnya yah
 <table>
 <tr>
   <th>Standard Looping</th>
-  <th>Recursive</th>
 </tr>
 <tr>
   <td>
@@ -170,6 +169,11 @@ Mari kita coba melihat dari yang standard looping dengan rekursifnya yah
   ```
 
   </td>
+</tr>
+<tr>
+  <th>Recursive</th>
+</tr>
+<tr>
   <td>
 
   ```javascript
