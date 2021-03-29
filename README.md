@@ -151,50 +151,33 @@ diinginkan tanpa terjadi `Maximum call stack size exceeded`.
 
 Mari kita coba melihat dari yang standard looping dengan rekursifnya yah
 
-<table>
-<tr>
-  <th>Standard Looping</th>
-</tr>
-<tr>
-  <td>
+### Standard Looping
+```javascript
+function printNumber(inputNumber) {
+  for(let i = inputNumber; i >= 1; i--) {
+    console.log(i);
+  }
+}
 
-  ```javascript
-  function printNumber(inputNumber) {  
-    for(let i = inputNumber; i >= 1; i--) {  
-      console.log(i);  
-    }  
-  }  
-  
-  printNumber(5);
-  ```
+printNumber(5);
+```
 
-  </td>
-</tr>
-<tr>
-  <th>Recursive</th>
-</tr>
-<tr>
-  <td>
+### Recursive
+```javascript
+function printNumberRecursive(number) {
+  // base case
+  if(number === 0) {
+    return;
+  }
+  // logic
+  console.log(number);
 
-  ```javascript
-  function printNumberRecursive(number) {  
-    // base case  
-    if(number === 0) {  
-      return;  
-    }  
-    // logic  
-    console.log(number);  
-  
-    // recursive  
-    printNumberRecursive(number-1);  
-  }  
-  
-  printNumberRecursive(5);  
-  ```
+  // recursive
+  printNumberRecursive(number-1);
+}
 
-  </td>
-</tr>
-</table>
+printNumberRecursive(5);
+```
 
 Tapi dari sini penjelasan tentang rekursifnya masih terasa kurang bukan? Mari kita mencoba lagi
 yah untuk membuat sebuah fungsi rekursif, misalnya kita ingin membuat sebuah fungsi faktorial 
