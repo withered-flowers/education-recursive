@@ -1,0 +1,5 @@
+function testRecursive() {
+  testRecursive();
+}
+
+testRecursive();
