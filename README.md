@@ -2,7 +2,7 @@
 1. [Recap Functions](#recap-functions)
 1. [Prelude to Recursive](#prelude-to-recursive)
 1. [Recursive How to](#recursive-how-to)
-  - [Base Case (Limit)](#base-case-limit)
+    - [Base Case (Limit)](#base-case-limit)
 1. [Why Recursive](#why-recursive)
 1. [References](#references)
 
@@ -189,6 +189,7 @@ Mari kita coba melihat dari yang standard looping dengan rekursifnya yah
   ```
 
   </td>
+</tr>
 </table>
 
 Tapi dari sini penjelasan tentang rekursifnya masih terasa kurang bukan? Mari kita mencoba lagi
